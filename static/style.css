@@ -35,29 +35,6 @@
 }
 
 .homeBtn {
-    width: 150px;
-    /* Increased button size */
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    /* Position it absolutely in the viewport */
-    bottom: 20px;
-    /* Position it lower than the title bar */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #444;
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 999;
-    /* Make sure the button is above other content */
-}
-
-.homeBtn {
     width: 60px;
     height: 30px;
     display: flex;
@@ -90,5 +67,41 @@
 }
 
 .homeBtn:hover {
+    background-color: #555;
+}
+
+.gamesBtn {
+    width: 62px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+    top: 100px;
+    left: 100px;
+
+    transform: translate(0, 0);
+
+    background-color: #444;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.gamesBtn button {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+.gamesBtn:hover {
     background-color: #555;
 }
