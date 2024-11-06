@@ -1,35 +1,94 @@
-.index {
-    background-color: #333; /* Dark background for the box */
-    color: #FFFFFF; /* White text color for visibility */
+.title {
+    background-color: #333;
+    color: #FFFFFF;
     font-family: Arial, sans-serif;
     text-align: center;
-    padding: 25px; /* Reduced padding for a tighter box */
+    padding: 15px 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid #999999;
     border-radius: 5px;
 
     position: fixed;
-    top: -1px; /* Move the box up by adjusting this value */
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     max-width: 1920px;
-    height: 50px; /* Fixed height */
+    height: 50px;
     z-index: 1000;
 
-    display: flex; /* Enable flexbox */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.index a {
+.title a {
     text-decoration: none;
     color: inherit;
-    cursor: default;
+    cursor: pointer;
 }
 
 .header {
-    color: rgb(255, 255, 255); /* White color for the header */
-    font-size: 30px; /* Font size for the title */
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.homeBtn {
+    width: 150px;
+    /* Increased button size */
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* Position it absolutely in the viewport */
+    bottom: 20px;
+    /* Position it lower than the title bar */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #444;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+    /* Make sure the button is above other content */
+}
+
+.homeBtn {
+    width: 60px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+    top: 100px;
+    left: 30px;
+
+    transform: translate(0, 0);
+
+    background-color: #444;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.homeBtn button {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+.homeBtn:hover {
+    background-color: #555;
 }
