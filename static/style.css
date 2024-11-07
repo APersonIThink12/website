@@ -1,3 +1,4 @@
+/* Title styles */
 .title {
     background-color: #333;
     color: #FFFFFF;
@@ -34,19 +35,16 @@
     font-family: Arial, sans-serif;
 }
 
-.homeBtn {
-    width: 60px;
+/* Home and Games buttons */
+.homeBtn,
+.gamesBtn {
+    width: 65px;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: fixed;
-
     top: 100px;
-    left: 30px;
-
-    transform: translate(0, 0);
-
     background-color: #444;
     color: white;
     font-size: 16px;
@@ -56,42 +54,15 @@
     z-index: 999;
 }
 
-.homeBtn button {
-    width: 100%;
-    height: 100%;
-    font-size: 16px;
-    border: none;
-    background-color: transparent;
-    color: inherit;
-    cursor: pointer;
-}
-
-.homeBtn:hover {
-    background-color: #555;
+.homeBtn {
+    left: 30px;
 }
 
 .gamesBtn {
-    width: 62px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-
-    top: 100px;
     left: 100px;
-
-    transform: translate(0, 0);
-
-    background-color: #444;
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 999;
 }
 
+.homeBtn button,
 .gamesBtn button {
     width: 100%;
     height: 100%;
@@ -102,6 +73,84 @@
     cursor: pointer;
 }
 
+.homeBtn:hover,
 .gamesBtn:hover {
     background-color: #555;
+}
+
+/* Main .game container */
+.game {
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* Align the content to the top */
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    top: 200px;
+    /* Allow the title and content to be stacked properly */
+}
+
+/* Button inside .game container - fill the full container */
+.game button {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Semi-transparent background */
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    /* Position button inside .game */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    z-index: 1;
+    /* Ensure button is above the image */
+}
+
+/* Image inside .game container */
+.gameImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image covers the area without distortion */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    /* Ensure image stays behind the button */
+}
+
+/* Hover effect for .game */
+.game:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gameTitle {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 2;
 }
