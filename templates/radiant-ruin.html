@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Radiant Ruin</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="title" id="title">
+    <a href="/">
+      <h1 class="header">Radiant Ruin</h1>
+    </a>
+  </div>
+
+  <div class="mainContainer" id="mainContainer">
+    <div class="homeBtn" id="homeBtn">
+      <button>Home</button>
+    </div>
+
+    <div class="gamesBtn" id="gamesBtn">
+      <button>Games</button>
+    </div>
+
+    <div class="radiantRuinContainer">
+      <div class="buyBtnDiv">
+        <button class="buyBtn" id="buyBtn">Buy</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
