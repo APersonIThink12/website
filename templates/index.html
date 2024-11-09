@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Home</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
+{% block title %}Home - Thunderbolt Interactive{% endblock %}
 
-<body>
+{% block body %}
   <div class="title" id="title">
     <a href="/">
       <h1 class="header">Thunderbolt Interactive</h1>
@@ -24,8 +17,4 @@
       <button>Games</button>
     </div>
   </div>
-
-  <script src="{{ url_for('static', filename='script.js') }}"></script>
-</body>
-
-</html>
+{% endblock %}

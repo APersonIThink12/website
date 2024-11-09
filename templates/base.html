@@ -5,14 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Games</title>
+  <title>{% block title %}Home{% endblock %}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
+  {% block body %}
   <div class="title" id="title">
     <a href="/">
-      <h1 class="header">Games</h1>
+      <h1 class="header">Thunderbolt Interactive</h1>
     </a>
   </div>
 
@@ -24,17 +25,7 @@
       <button>Games</button>
     </div>
   </div>
-
-  <div class="gameContainer" id="gameContainer">
-    <div class="game" id="radiantRuinGame">
-      <h2 class="gameTitle">Radiant Ruin</h2>
-      <button id="radiantRuinBtn">
-        <img class="gameImg" src="{{ url_for('static', filename='images/radiant-ruin.png') }}" alt="Radiant Ruin">
-      </button>
-    </div>
-
-    <div class="gameTitles" id="gameTitles"> </div>
-  </div>
+  {% endblock %}
 
   <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
