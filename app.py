@@ -1,5 +1,5 @@
-from flask import Flask
-from flask import render_template
+from flask import Flask, request, render_template, make_response
+from time import time
 
 app = Flask(__name__)
 
@@ -14,6 +14,21 @@ def games():
 @app.route('/radiant-ruin')
 def radiantruin():
     return render_template("radiant-ruin.html")
+
+@app.route('/contact', methods=['GET', 'POST'])
+def contact():
+    if request.method == 'POST':
+        name = request.form['name']
+        resp = make_response(render_template("contact.html", name=name))
+        resp.set_cookie('name', name)
+        return resp
+    name = request.cookies.get('name', None)
+    return render_template("contact.html", name=name)
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True)

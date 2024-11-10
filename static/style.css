@@ -186,3 +186,134 @@
     color: inherit;
     cursor: pointer;
 }
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.footer a {
+    color: inherit;
+    font-family: inherit;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.contactForm label {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.inputField {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.inputField:focus {
+    background-color: #555;
+}
+
+.submitBtn {
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submitBtn:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.contactWelcome {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    background-color: #444;
+    padding: 15px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* About Container */
+.aboutContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF; /* White page background */
+    padding: 0 20px; /* Add padding only for small screens */
+    box-sizing: border-box;
+    overflow: hidden; /* Prevents any accidental scroll */
+}
+
+/* Content Box */
+.aboutWelcome {
+    max-width: 800px;
+    background-color: #444; /* Darker background for text box */
+    color: #FFFFFF;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.aboutWelcome h2 {
+    font-size: 26px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+.aboutWelcome p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin-bottom: 15px;
+    color: #ddd;
+}
