@@ -29,6 +29,12 @@ def contact():
 def about():
     return render_template('about.html')
 
+@app.route('/software')
+def software():
+    return render_template('software.html')
 
+@app.route('/software/vglcompiler')
+def vglcompiler():
+    return render_template('vglcompiler.html')
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True)

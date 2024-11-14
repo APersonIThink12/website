@@ -1,4 +1,3 @@
-/* Title styles */
 .title {
     background-color: #333;
     color: #FFFFFF;
@@ -35,7 +34,6 @@
     font-family: Arial, sans-serif;
 }
 
-/* Home and Games buttons */
 .homeBtn,
 .gamesBtn {
     width: 65px;
@@ -316,4 +314,112 @@ html, body {
     font-family: Arial, sans-serif;
     margin-bottom: 15px;
     color: #ddd;
+}
+
+.contact1 {
+    display: inline-block;
+    position: relative;
+    top: 170px;
+    left: 900px;
+
+}
+
+.contact1::before,
+.contact1::after {
+    position: absolute;
+    left: 0;
+    transition: opacity 0.1s ease-in-out;
+    white-space: nowrap; /* Ensures the text stays on one line */
+}
+
+.contact1::before {
+    content: "Lead Developer";
+    opacity: 1; /* Visible by default */
+}
+
+.contact1::after {
+    content: "Theodore Cromwell";
+    opacity: 0; /* Hidden by default */
+}
+
+.contact1:hover::before {
+    opacity: 0; /* Fades out */
+}
+
+.contact1:hover::after {
+    opacity: 1; /* Fades in */
+}
+
+.contact2 {
+    display: inline-block;
+    position: relative;
+    top: 170px;
+    left: 900px;
+
+}
+
+.contact2::before,
+.contact2::after {
+    position: absolute;
+    left: 0;
+    transition: opacity 0.1s ease-in-out;
+    white-space: nowrap; /* Ensures the text stays on one line */
+}
+
+.contact2::before {
+    content: "Artist";
+    opacity: 1; /* Visible by default */
+}
+
+.contact2::after {
+    content: "Jaxon DesLauriers";
+    opacity: 0; /* Hidden by default */
+}
+
+.contact2:hover::before {
+    opacity: 0; /* Fades out */
+}
+
+.contact2:hover::after {
+    opacity: 1; /* Fades in */
+}
+
+.hoverTip {
+    position: relative;
+    top: 100px;
+    left: 880px;
+    font-family: sans-serif;
+
+}
+
+.vglCompilerBtn {
+    width: 70px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 100px;
+    background-color: #444;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+    left: 200px;
+}
+
+.vglCompilerBtn button {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+.vglCompilerBtn:hover {
+    background-color: #555;
 }
