@@ -275,9 +275,21 @@
 html, body {
     height: 100%;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.aboutVGL {
+    max-width: 800px;
+    background-color: #444;
+    color: #FFFFFF;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
 
 /* About Container */
 .aboutContainer {
@@ -407,7 +419,7 @@ html, body {
     border-radius: 5px;
     cursor: pointer;
     z-index: 999;
-    left: 200px;
+    left: 170px;
 }
 
 .vglCompilerBtn button {
@@ -422,4 +434,31 @@ html, body {
 
 .vglCompilerBtn:hover {
     background-color: #555;
+}
+
+.aboutVGL {
+    max-width: 800px;
+    background-color: #444;
+    color: #FFFFFF;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Header styling within .aboutVGL */
+.aboutVGL h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+
+/* Paragraph styling within .aboutVGL */
+.aboutVGL p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: white;
+    font-family: sans-serif;
 }
