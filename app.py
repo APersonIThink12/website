@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, make_response
+from flask import Flask, request, render_template, make_response, send_file
 from time import time
 
 app = Flask(__name__)
@@ -36,5 +36,11 @@ def software():
 @app.route('/software/vglcompiler')
 def vglcompiler():
     return render_template('vglcompiler.html')
+
+@app.route('/download')
+def download_file():
+    p = "test.png"
+    return send_file(p, as_attachment=True)
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True)
