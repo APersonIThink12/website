@@ -33,14 +33,6 @@ def about():
 def software():
     return render_template('software.html')
 
-@app.route('/software/vglcompiler')
-def vglcompiler():
-    return render_template('vglcompiler.html')
-
-@app.route('/download')
-def download_file():
-    p = "test.png"
-    return send_file(p, as_attachment=True)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True)

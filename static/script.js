@@ -28,10 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Event listener for buy button
-  if (buyBtn && purchased) {
+  if (buyBtn) {
     buyBtn.addEventListener('click', () => {
       alert('Purchased!');
-      purchased = true;
     });
   }
 });
