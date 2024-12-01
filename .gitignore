@@ -1,5 +1,4 @@
 .replit
-app.py
 pyproject.toml
 README.md
 uv.lock
