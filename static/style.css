@@ -342,6 +342,7 @@ html, body {
 .contact1::after {
     content: "Theodore Cromwell";
     opacity: 0; /* Hidden by default */
+    left: -15px;
 }
 
 .contact1:hover::before {
@@ -375,6 +376,7 @@ html, body {
 .contact2::after {
     content: "Jaxon DesLauriers";
     opacity: 0; /* Hidden by default */
+    left: -35px;
 }
 
 .contact2:hover::before {
@@ -468,4 +470,60 @@ html, body {
     cursor: pointer;
     z-index: 999;
     left: 920px;
+}
+.button-container {
+  display: flex; /* Aligns the buttons side by side */
+  gap: 10px; /* Adds space between the buttons */
+}
+
+.githubBtn {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 2px solid #e1e4e8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.githubBtn:hover {
+  background-color: #f6f8fa;
+  transform: scale(1.05);
+}
+
+.githubBtn img {
+  width: 130%;
+  height: 130%;
+  object-fit: contain;
+}
+
+.discordBtn {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 2px solid #e1e4e8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.discordBtn:hover {
+  background-color: #f6f8fa;
+  transform: scale(1.05);
+}
+
+.discordBtn img {
+  width: 130%;
+  height: 130%;
+  object-fit: contain;
 }
