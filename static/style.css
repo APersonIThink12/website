@@ -528,6 +528,37 @@ html, body {
   object-fit: contain;
 }
 
+.redditBtn {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 2px solid #e1e4e8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+  position: fixed; /* Make it fixed */
+  top: 910px; /* Position it vertically centered */
+  right: 1730px; /* Position it 20px from the right side */
+  transform: translateY(-50%); /* Adjust to center vertically */
+}
+
+.redditBtn:hover {
+  background-color: #f6f8fa;
+  transform: scale(1.05) translateY(-50%); /* Keep vertical centering */
+}
+
+.redditBtn img {
+  width: 130%;
+  height: 130%;
+  object-fit: contain;
+}
+
+
 .devLog {
     max-width: 800px;
     background-color: #444;
