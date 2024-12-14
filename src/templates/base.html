@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{% block title %}Home{% endblock %}</title>
+
+  <!-- Link to the favicon -->
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v={{ timestamp }}">
+</head>
+
+<body>
+  {% block body %}
+  <div class="title">
+    <a href="/">
+      <h1 class="header">Thunderbolt Interactive</h1>
+    </a>
+  </div>
+
+  <div class="mainContainer">
+    <div class="homeBtn">
+      <button onclick="location.href='/'">Home</button>
+    </div>
+    <div class="gamesBtn">
+      <button onclick="location.href='/games'">Games</button>
+    </div>
+  </div>
+  {% endblock %}
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footerText1">&copy; 2024 Thunderbolt Interactive. All rights reserved.</p>
+      <p class="footerText2"><a href="/about">About Us</a> | <a href="/contact">Contact</a></p>
+
+
+<div class="button-container">
+  <button class="githubBtn" onclick="location.href='https://github.com/APersonIThink12'">
+    <img src="{{ url_for('static', filename='githubImg.svg') }}" alt="Link to Company GitHub">
+  </button>
+  <button class="discordBtn" onclick="location.href='https://discord.gg/UkvkfPk9Rf'">
+    <img src="{{ url_for('static', filename='discordImg.svg') }}" alt="Link to Company Discord Server">
+  </button>
+</div>
+  <button class="redditBtn" onclick="location.href='https://www.reddit.com/r/ThunderboltInteractiv/'">
+    <img src="{{ url_for('static', filename='redditImg.svg') }}" alt="Link to Company SubReddit">
+  </button>
+</div>
+
+  
+
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

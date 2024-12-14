@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Thunderbolt Interactive{% endblock %}
+
+{% block body %}
+  <div class="title" id="title">
+    <a href="/">
+      <h1 class="header">Thunderbolt Interactive</h1>
+    </a>
+  </div>
+
+  <div class="VGL Compiler">
+    <button onclick="location.href='/software/vglcompiler'"></button>
+  </div>
+
+  <div class="navigationBtns">
+    <div class="homeBtn">
+      <button onclick="location.href='/'">Home</button>
+    </div>
+    <div class="gamesBtn">
+      <button onclick="location.href='/games'">Games</button>
+    </div>
+    <div class="vglCompilerBtn">
+      <button onclick="location.href='/software/vglcompiler'">VGL Compiler</button>
+    </div>
+  </div>
+{% endblock %}
