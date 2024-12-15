@@ -342,9 +342,9 @@ html, body {
 }
 
 .contact1::after {
-    content: "Theodore Cromwell";
+    content: "thunderboltinteractivegames@gmail.com";
     opacity: 0; /* Hidden by default */
-    left: -15px;
+    left: -70px;
 }
 
 .contact1:hover::before {
