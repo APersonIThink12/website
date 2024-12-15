@@ -26,11 +26,3 @@ document.addEventListener('DOMContentLoaded', () => {
       window.location.href = '/radiant-ruin';
     });
   }
-
-  // Event listener for buy button
-  if (buyBtn) {
-    buyBtn.addEventListener('click', () => {
-      alert('Purchased!');
-    });
-  }
-});
