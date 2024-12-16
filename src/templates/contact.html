@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}Contact{% endblock %}
+{% block title %}Thunderbolt Interactive{% endblock %}
 
 {% block body %}
   <div class="title" id="title">
@@ -8,27 +8,10 @@
       <h1 class="header">Thunderbolt Interactive</h1>
     </a>
   </div>
-
-  <div class="mainContainer" id="mainContainer">
-    <h1>Contact Page</h1>
-
-    {% if name %}
-      <p class="contactWelcome">Welcome back, {{ name }}!</p>
-      <p class="contact1"></p>
-      <p class="contact2"></p>
-
-
-
-      <p class="hoverTip">Hover To View Email</p>
-
-    {% else %}
-      <p>Enter your name below:</p>
-      <form method="POST" class="contactForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" class="inputField">
-        <button type="submit" class="submitBtn">Submit</button>
-      </form>
-    {% endif %}
+  <div class="contactsDiv">
+  <h1 class="contacts">Contacts</h1>
+    <p class="contact1"></p>
+    <p class="contact2"></p>
   </div>
 
   <!-- Navigation buttons moved here to appear on the contact page -->

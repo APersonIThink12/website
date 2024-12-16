@@ -15,15 +15,9 @@ def games():
 def radiantruin():
     return render_template("radiant-ruin.html")
 
-@app.route('/contact', methods=['GET', 'POST'])
+@app.route('/contact')
 def contact():
-    if request.method == 'POST':
-        name = request.form['name']
-        resp = make_response(render_template("contact.html", name=name))
-        resp.set_cookie('name', name)
-        return resp
-    name = request.cookies.get('name', None)
-    return render_template("contact.html", name=name)
+    return render_template("contact.html")
 
 @app.route('/about')
 def about():

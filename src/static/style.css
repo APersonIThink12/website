@@ -203,77 +203,6 @@
     font-family: inherit;
 }
 
-.contactForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    background-color: #444;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    margin: 20px auto;
-}
-
-.contactForm label {
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.inputField {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #333;
-    color: #fff;
-    outline: none;
-    transition: background-color 0.3s ease;
-}
-
-.inputField:focus {
-    background-color: #555;
-}
-
-.submitBtn {
-    padding: 10px 20px;
-    background-color: #444;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.submitBtn:hover {
-    background-color: #555;
-    transform: scale(1.05);
-}
-
-.contactWelcome {
-    font-size: 20px;
-    font-family: Arial, sans-serif;
-    color: #FFFFFF;
-    background-color: #444;
-    padding: 15px 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    max-width: 80%;
-    margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 html, body {
     height: 100%;
     margin: 0;
@@ -323,9 +252,8 @@ html, body {
 .contact1 {
     display: inline-block;
     position: relative;
-    top: 50px;
-    left: 35px;
-
+    top: -300px;
+    text-align: center;
 }
 
 .contact1::before,
@@ -358,8 +286,9 @@ html, body {
 .contact2 {
     display: inline-block;
     position: relative;
-    top: 80px;
-    left: 60px;
+    top: -280px;
+    text-align: center;
+    left: 35px;
 }
 
 .contact2::before,
@@ -378,7 +307,7 @@ html, body {
 .contact2::after {
     content: "Jaxon DesLauriers";
     opacity: 0; /* Hidden by default */
-    left: -35px;
+    left: -45px;
 }
 
 .contact2:hover::before {
@@ -389,13 +318,17 @@ html, body {
     opacity: 1; /* Fades in */
 }
 
-.hoverTip {
-    position: relative;
-    top: -10px;
-    left: 7px;
+.contactsDiv {
     font-family: sans-serif;
-
 }
+
+.contactsDiv h1 {
+    top: -260px;
+    position: relative;
+    text-align: center;
+    left: -14px;
+}
+
 
 .vglCompilerBtn {
     width: 70px;
@@ -593,4 +526,30 @@ html, body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+    top: 100px;
+}
+
+.news {
+    width: 900px;
+    background-color: #444;
+    color: #FFFFFF;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.news h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.news p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: white;
+    font-family: sans-serif;
 }
