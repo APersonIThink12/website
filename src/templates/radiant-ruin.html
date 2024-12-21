@@ -3,27 +3,34 @@
 {% block title %}Thunderbolt Interactive{% endblock %}
 
 {% block body %}
-  <div class="title" id="title">
-    <a href="/">
-      <h1 class="header">Thunderbolt Interactive</h1>
-    </a>
+<div class="title" id="title">
+  <a href="/">
+    <h1 class="header">Thunderbolt Interactive</h1>
+  </a>
+</div>
+
+<div class="mainContainer" id="mainContainer">
+  <div class="homeBtn">
+    <button class="btn" onclick="location.href='/'">Home</button>
+  </div>
+  <div class="gamesBtn">
+    <button class="btn" onclick="location.href='/games'">Games</button>
   </div>
 
-  <div class="mainContainer" id="mainContainer">
-    <div class="homeBtn">
-      <button onclick="location.href='/'">Home</button>
-    </div>
-    <div class="gamesBtn">
-      <button onclick="location.href='/games'">Games</button>
-    </div>
-
   <div class="devLog" id="devLog">
-    <h>Development Log</h>
-    <p>Radiant Ruin is currently in active development demo expected 1/15/2025.</p>
+    <h2>Development Log</h2>
+    <p>Radiant Ruin is currently being developed in Game Maker Studio 2. Some new additions to the game include:</p>
+    <ul>
+      <li>Animations</li>
+      <li>Inventory System</li>
+      <li>NPCs</li>
+      <li>Combat System</li>
+    </ul>
   </div>
 
   <div class="radiantRuinTrailer">
-    <h1>Trailer</h1>
+    <h2>Trailer</h2>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/UkaWPk4wZAs?si=fAT8AV6P1cUD4tyB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
+</div>
 {% endblock %}
