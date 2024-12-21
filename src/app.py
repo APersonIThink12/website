@@ -1,5 +1,4 @@
-from flask import Flask, request, render_template, make_response, send_file
-from time import time
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -11,7 +10,7 @@ def home():
 def games():
     return render_template("games.html")
 
-@app.route('/radiant-ruin')
+@app.route('/games/radiant-ruin')
 def radiantruin():
     return render_template("radiant-ruin.html")
 
@@ -26,7 +25,6 @@ def about():
 @app.route('/software')
 def software():
     return render_template('software.html')
-
 
 
 if __name__ == '__main__':
