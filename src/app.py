@@ -25,7 +25,8 @@ def about():
 @app.route('/software')
 def software():
     return render_template('software.html')
-
-
+@app.route('/software/ratchet')
+def ratchet():
+    return render_template('ratchet.html')
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True)
