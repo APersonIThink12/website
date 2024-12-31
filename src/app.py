@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_file
 
 app = Flask(__name__)
 
@@ -25,8 +25,14 @@ def about():
 @app.route('/software')
 def software():
     return render_template('software.html')
+
 @app.route('/software/ratchet')
 def ratchet():
     return render_template('ratchet.html')
+
+@app.route('/downloadRatchet')
+def download_ratchet():
+    return send_file('static/ratchet_installer.exe', as_attachment=True)
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True)
