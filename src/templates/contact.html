@@ -3,16 +3,23 @@
 {% block title %}Thunderbolt Interactive{% endblock %}
 
 {% block body %}
-  <div class="title" id="title">
-    <a href="/">
-      <h1 class="header">Thunderbolt Interactive</h1>
-    </a>
-  </div>
+<div class="title" id="title">
+  <a href="/">
+    <img class="headerImg" src="static/favicon.ico" alt="Favicon">
+  </a>
+  <a href="/">
+    <h1 class="header">Thunderbolt Interactive</h1>
+  </a>
+</div>
   <div class="contactsDiv">
   <h1 class="contacts">Contacts</h1>
     <p class="contact1"></p>
     <p class="contact2"></p>
   </div>
+
+<div class="button-container">
+  <button class="applyButton" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeoDXeIpurH4XMnql9Krg3hcxVhtQSbJsbHImccX9vNEzAODg/viewform?usp=header'">Apply Now</button>
+</div>
 
   <!-- Navigation buttons moved here to appear on the contact page -->
   <div class="navigationBtns">
@@ -21,6 +28,9 @@
     </div>
     <div class="gamesBtn">
       <button onclick="location.href='/games'">Games</button>
+    </div>
+    <div class="softwareBtn">
+      <button onclick="location.href='/software'">Software</button>
     </div>
   </div>
 {% endblock %}
