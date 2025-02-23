@@ -306,9 +306,9 @@ html, body {
 }
 
 .contact2::after {
-    content: "Jaxon DesLauriers";
+    content: "Alex Nitchals";
     opacity: 0; /* Hidden by default */
-    left: -45px;
+    left: -30px;
 }
 
 .contact2:hover::before {
@@ -702,6 +702,3 @@ html, body {
 .applyButton:hover {
     background-color: #555;
 }
-
-
-
