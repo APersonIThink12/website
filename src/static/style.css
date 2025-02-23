@@ -47,7 +47,7 @@
     color: white;
     font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     z-index: 999;
 }
@@ -156,37 +156,6 @@
     font-family: Arial, sans-serif;
 }
 
-.buyBtn {
-    width: 120px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 300px;
-    left: 890px;
-    background-color: #444;
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    z-index: 999;
-}
-
-.buyBtn:hover {
-    background-color: #555;
-}
-
-.buyBtn button {
-    width: 100%;
-    height: 100%;
-    font-size: 16px;
-    border: none;
-    background-color: transparent;
-    color: inherit;
-    cursor: pointer;
-}
 .footer {
     background-color: #333;
     color: white;
@@ -306,9 +275,9 @@ html, body {
 }
 
 .contact2::after {
-    content: "Jaxon DesLauriers";
+    content: "Alex Nitcahls";
     opacity: 0; /* Hidden by default */
-    left: -45px;
+    left: -23px;
 }
 
 .contact2:hover::before {
@@ -342,7 +311,7 @@ html, body {
     color: white;
     font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     z-index: 999;
     left: 170px;
@@ -401,7 +370,7 @@ html, body {
     color: white;
     font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     z-index: 999;
     left: 920px;
@@ -573,7 +542,7 @@ html, body {
     color: white;
     font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     z-index: 999;
     left: 170px;
@@ -606,7 +575,7 @@ html, body {
     color: white;
     font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     z-index: 999;
 }
@@ -638,7 +607,7 @@ html, body {
     color: white;
     font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     z-index: 999;
 }
@@ -683,7 +652,7 @@ html, body {
     color: white;
     font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     z-index: 999;
     left: 245px;
@@ -703,5 +672,65 @@ html, body {
     background-color: #555;
 }
 
+.news1 {
+    font-weight: bold;
+    color: white;
+    position: relative;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 2px; /* Adjust thickness if needed */
+}
 
+.news1::after {
+    content: "Click Here to Learn More About Radiant Ruin";
+    position: absolute;
+    background: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+.news1:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.news2 {
+    font-weight: bold;
+    color: white;
+    position: relative;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 2px; /* Adjust thickness if needed */
+}
+
+.news2::after {
+    content: "Click Here to Learn More About The Revamp";
+    position: absolute;
+    background: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    white-space: nowrap;
+}
+
+.news2:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
 
