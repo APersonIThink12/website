@@ -216,7 +216,7 @@ html, body {
     line-height: 1.6;
     font-family: Arial, sans-serif;
     margin-bottom: 15px;
-    color: #ddd;
+    color: white;
 }
 
 .contact1 {
@@ -532,7 +532,7 @@ html, body {
 
 .softwareBtn {
     width: 70px;
-    height: 40px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -564,7 +564,7 @@ html, body {
 
 .ratchetBtn {
     width: 70px;
-    height: 40px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -641,8 +641,8 @@ html, body {
 }
 
 .applyButton {
-    width: 70px;
-    height: 40px;
+    width: 85px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -734,3 +734,13 @@ html, body {
     visibility: visible;
 }
 
+.siteRevamp {
+    max-width: 800px;
+    background-color: #444;
+    color: #FFFFFF;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: sans-serif;
+}

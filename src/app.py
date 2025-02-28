@@ -30,6 +30,10 @@ def software():
 def ratchet():
     return render_template('ratchet.html')
 
+@app.route('/site-revamp')
+def site_revamp():
+    return render_template('site-revamp.html')
+
 @app.route('/downloadRatchet')
 def download_ratchet():
     return send_file('static/ratchet_installer.exe', as_attachment=True)
