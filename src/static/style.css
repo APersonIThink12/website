@@ -1,9 +1,8 @@
+/* Dropdown hover bridge for usability */
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
-/* Create a hover bridge between button and dropdown */
 .dropdown::after {
     content: '';
     display: block;
@@ -14,18 +13,8 @@
     height: 18px;
     z-index: 1;
 }
-
 .dropdown:hover .dropdown-content,
 .dropdown:focus-within .dropdown-content {
-    display: block;
-}
-/* Dropdown hover area fix */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown:hover .dropdown-content {
     display: block;
 }
 /* Reset default body margin */
@@ -33,6 +22,7 @@ body {
     margin: 0;
 }
 
+/* Header container styles */
 /* Header container styles */
 .headerContainer {
     display: flex;
@@ -93,13 +83,4 @@ body {
     color: #2d2d2d;
     transform: scale(1.15);
     text-decoration: none;
-}
-.headerContainer {
-    display: flex;
-    justify-content: top;
-    align-items: top;
-    padding: 10px;
-    background-color: #cccccc;
-    width: 100vw;
-    box-sizing: border-box;
 }
