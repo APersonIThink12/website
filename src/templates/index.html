@@ -1,34 +1,25 @@
-{% extends "base.html" %}
-
-{% block title %}Thunderbolt Interactive{% endblock %}
-
-{% block body %}
-<div class="title" id="title">
-  <a href="/">
-  <img class="headerImg" src="static/favicon.ico" alt="Favicon">
-  </a>
-  <a href="/">
-    <h1 class="header">Thunderbolt Interactive</h1>
-  </a>
-</div>
-
-
-  <div class="mainContainer" id="mainContainer">
-    <div class="homeBtn">
-      <button onclick="location.href='/'">Home</button>
-    </div>
-    <div class="gamesBtn">
-      <button onclick="location.href='/games'">Games</button>
-    </div>
-    <div class="softwareBtn">
-      <button onclick="location.href='/software'">Software</button>
-    </div>
-    <div class="news">
-      <h1>News</h1>
-      <li>Radiant Ruin Trailer Expected 1/15/2025</li>
-      <li>Site Revamp Coming Soon!</li>
-    </div>
-  </div>
-
-
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script defer src="/static/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="headerContainer">
+            <a href="/" class="homeTag">Home</a>
+            <div class="dropdown">
+                <a href="/contact" class="contactTag">Contact</a>
+                <div class="dropdown-content">
+                    <a href="#">Email</a>
+                    <a href="#">Phone</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
